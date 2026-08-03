@@ -1,8 +1,13 @@
-it<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>VT Styles</title>
+
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: Arial;
@@ -20,25 +25,11 @@ it<!DOCTYPE html>
             color: white;
             margin: 0 15px;
             text-decoration: none;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            color: yellow;
         }
 
         .hero {
             text-align: center;
             padding: 100px 20px;
-        }
-
-        h1 {
-            font-size: 40px;
-        }
-
-        .section {
-            padding: 40px;
-            text-align: center;
         }
 
         .btn {
@@ -48,30 +39,44 @@ it<!DOCTYPE html>
             border-radius: 5px;
             text-decoration: none;
         }
-    </style> <div class="section" id="contact">
-    <h2>Contact Us</h2>
 
-    <div class="card">
-        📧 contact@vtstyles.com
-    </div>
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
 
-    <div class="card">
-        📞 +91 7406890302
-    </div>
+        .card {
+            background: white;
+            color: black;
+            padding: 15px;
+            margin: 15px auto;
+            width: 80%;
+            border-radius: 15px;
+        }
 
-    <div class="card">
-        📍 Bangalore, India
-    </div>
+        .form-box {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 85%;
+            border-radius: 20px;
+        }
 
-    <div class="form-box">
-        <input type="text" placeholder="Name"><br><br>
-        <input type="email" placeholder="Email"><br><br>
-        <input type="text" placeholder="Company / Organization"><br><br>
-        <textarea placeholder="How can we help you?"></textarea><br><br>
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
 
-        <button class="btn2">Start Conversation</button>
-    </div>
-</div>
+        .btn2 {
+            background: linear-gradient(to right, blue, purple);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -85,6 +90,7 @@ it<!DOCTYPE html>
 <div class="hero">
     <h1>Welcome to VT Styles 😎</h1>
     <p>Fashion • Fabric • Vibes 🔥</p>
+    <br>
     <a class="btn" href="#contact">Contact Us</a>
 </div>
 
@@ -94,13 +100,21 @@ it<!DOCTYPE html>
 </div>
 
 <div class="section" id="contact">
-    <h2>Contact</h2>
-    <p>📞 +91 XXXXX XXXXX</p>
-    <p>📍 Your Location</p>
+    <h2>Contact Us</h2>
+
+    <div class="card">📧 contact@vtstyles.com</div>
+    <div class="card">📞 +91 7406890302</div>
+    <div class="card">📍 Bangalore, India</div>
+
+    <div class="form-box">
+        <input type="text" placeholder="Name"><br><br>
+        <input type="email" placeholder="Email"><br><br>
+        <input type="text" placeholder="Company / Organization"><br><br>
+        <textarea placeholder="How can we help you?"></textarea><br><br>
+
+        <button class="btn2">Start Conversation</button>
+    </div>
 </div>
 
 </body>
-</html> 
-CSS  html {
-    scroll-behavior: smooth;
-}
+</html>
