@@ -1,22 +1,80 @@
-  <title>VT Styles</title>
-  <style>
-    body {
-      background: linear-gradient(to right, black, purple);
-      color: white;
-      text-align: center;
-      font-family: Arial;
-    }
-    h1 {
-      margin-top: 100px;
-      font-size: 40px;
-    }
-    p {
-      font-size: 20px;
-    }
-  </style>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VT Styles</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, black, purple);
+            color: white;
+        }
+
+        nav {
+            background: rgba(0,0,0,0.7);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .btn {
+            background: orange;
+            padding: 10px 20px;
+            color: black;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Welcome to VT Styles 😎</h1>
-  <p>Fashion • Fabric • Vibes 🔥</p>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Welcome to VT Styles 😎</h1>
+    <p>Fashion • Fabric • Vibes 🔥</p>
+    <a class="btn" href="#contact">Contact Us</a>
+</div>
+
+<div class="section" id="about">
+    <h2>About Us</h2>
+    <p>We provide stylish fashion and quality fabrics with modern vibes.</p>
+</div>
+
+<div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>📞 +91 7406890302</p>
+    <p>📍 Your Banglore</p>
+</div>
+
 </body>
 </html>
