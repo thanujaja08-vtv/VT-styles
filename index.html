@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,16 +32,7 @@ body {
     padding: 20px;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 18px;
-    background: orange;
-    color: black;
-    border-radius: 6px;
-    text-decoration: none;
-}
-
+/* Card */
 .card {
     background: white;
     color: black;
@@ -48,14 +40,14 @@ body {
     padding: 12px;
     width: 85%;
     border-radius: 10px;
-    transition: 0.3s;
+    cursor: pointer;
 }
 
-.card:hover {
-    transform: scale(1.05);
+/* Hidden submenu */
+.submenu {
+    display: none;
 }
 
-/* Sub category style */
 .sub {
     background: #f5f5f5;
     color: black;
@@ -98,6 +90,17 @@ body {
 }
 </style>
 
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("blouseMenu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+</script>
+
 </head>
 
 <body>
@@ -106,7 +109,6 @@ body {
 <div class="header">
     <h1>Welcome to VT Styles 😎</h1>
     <p>Fabric • Fashion • Vibes 🔥</p>
-    <a href="#contact" class="btn">Contact Us</a>
 </div>
 
 <!-- About -->
@@ -126,24 +128,27 @@ body {
     <div class="card">✨ Fluffy Pleating</div>
     <div class="card">👗 Bridal Saree Setting</div>
 
-    <!-- Blouse stitching -->
-    <div class="card">👚 Blouse Stitching</div>
-    <div class="sub">• Bridal Design Blouse</div>
-    <div class="sub">• Casual Blouse</div>
-    <div class="sub">• Fancy Blouse</div>
+    <!-- Clickable blouse -->
+    <div class="card" onclick="toggleMenu()">👚 Blouse Stitching ⬇</div>
 
-    <!-- New services -->
+    <!-- Hidden submenu -->
+    <div id="blouseMenu" class="submenu">
+        <div class="sub">• Bridal Design Blouse</div>
+        <div class="sub">• Casual Blouse</div>
+        <div class="sub">• Fancy Blouse</div>
+    </div>
+
     <div class="card">👗 Kurti Stitching</div>
     <div class="card">👗 Gown Stitching</div>
 
 </div>
 
 <!-- Contact -->
-<div class="section" id="contact">
+<div class="section">
     <h2>Contact Us</h2>
 
     <a href="tel:+917406890302" style="text-decoration:none;">
-        <div class="card">📞 Contact</div>
+        <div class="card">📞 +91 7406890302</div>
     </a>
 
     <a class="whatsapp" href="https://wa.me/917406890302?text=Hi%20I%20need%20details" target="_blank">
