@@ -1,98 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>VT Styles</title>
+<title>VT Saree Services</title>
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(45deg, #fff0f5, #ffe4e1, #fff);
+    animation: bgMove 10s infinite alternate;
+}
 
-        body {
-            margin: 0;
-            font-family: Arial;
-            background: linear-gradient(to right, black, purple);
-            color: white;
-        }
+@keyframes bgMove {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
 
-        nav {
-            background: rgba(0,0,0,0.7);
-            padding: 15px;
-            text-align: center;
-        }
+.header {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: gold;
+    font-size: 24px;
+}
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
+.card {
+    background: white;
+    padding: 15px;
+    margin: 15px auto;
+    width: 80%;
+    border-radius: 15px;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 18px;
+}
 
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-        }
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px gold;
+}
 
-        .btn {
-            background: orange;
-            padding: 10px 20px;
-            color: black;
-            border-radius: 5px;
-            text-decoration: none;
-        }
+.slider {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
 
-        .section {
-            padding: 40px;
-            text-align: center;
-        }
+.slides {
+    display: flex;
+    animation: slide 12s infinite;
+}
 
-        .card {
-            background: white;
-            color: black;
-            padding: 15px;
-            margin: 15px auto;
-            width: 80%;
-            border-radius: 15px;
-        }
-    </style>
+.slides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0);}
+    33% {transform: translateX(-100%);}
+    66% {transform: translateX(-200%);}
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: darkgreen;
+    box-shadow: 0 0 15px green;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    color: white;
+}
+</style>
+
 </head>
 
 <body>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<div class="hero">
-    <h1>Welcome to VT Styles 😎</h1>
-    <p>Fashion • Fabric • Vibes 🔥</p>
-    <br>
-    <a class="btn" href="#contact">Contact Us</a>
+<div class="header">
+🧵 VT Saree Services 👗
 </div>
 
-<div class="section" id="about">
-    <h2>About Us</h2>
-    <p>We provide stylish fashion and quality fabrics with modern vibes.</p>
+<!-- Image Slider -->
+<div class="slider">
+    <div class="slides">
+        <img src="https://i.imgur.com/8Km9tLL.jpg">
+        <img src="https://i.imgur.com/5tj6S7Ol.jpg">
+        <img src="https://i.imgur.com/9Jg6K7Ol.jpg">
+    </div>
 </div>
 
-<div class="section" id="contact">
-    <h2>Contact Us</h2>
+<!-- Services -->
+<div class="card">✨ Saree Pre-Pleating</div>
+<div class="card">💫 Fluffy Pleating</div>
+<div class="card">👗 Bridal Saree Setting</div>
 
-    <div class="card">📧 contact@vtstyles.com</div>
-    <div class="card">📞 +91 7406890302</div>
-    <div class="card">📍 Bangalore, India</div>
+<!-- Contact -->
+<div class="card">📞 +91 7406890302</div>
 
-    <h2>Our Services</h2>
+<!-- WhatsApp Button -->
+<a class="btn" href="https://wa.me/917406890302?text=Hi%20I%20need%20saree%20service" target="_blank">
+Message on WhatsApp 💬
+</a>
 
-    <div class="card">🧵 Saree Folding</div>
-    <div class="card">✨ Saree Pre-Pleating</div>
-    <div class="card">💫 Fluffy Pleating</div>
-    <div class="card">👗 Bridal Saree Setting</div>
-
-    <br>
-
-    <h3>For more enquiries, please contact us 📞</h3>
+<div class="footer">
+For more enquiries, please contact us
 </div>
 
 </body>
