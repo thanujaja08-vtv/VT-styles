@@ -1,89 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>VT Saree Services</title>
+<title>VT Styles</title>
 
 <style>
 body {
     margin: 0;
     font-family: Arial;
-    background: linear-gradient(45deg, #fff0f5, #ffe4e1, #fff);
-    animation: bgMove 10s infinite alternate;
-}
-
-@keyframes bgMove {
-    0% {background-position: left;}
-    100% {background-position: right;}
+    background: linear-gradient(to right, black, purple);
+    color: white;
 }
 
 .header {
     text-align: center;
+    padding: 30px 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header p {
+    margin-top: 8px;
+    color: #ddd;
+}
+
+.section {
+    text-align: center;
     padding: 20px;
-    background: black;
-    color: gold;
-    font-size: 24px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: orange;
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
 }
 
 .card {
     background: white;
-    padding: 15px;
-    margin: 15px auto;
-    width: 80%;
-    border-radius: 15px;
-    transition: 0.3s;
-    text-align: center;
-    font-size: 18px;
-}
-
-.card:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 20px gold;
-}
-
-.slider {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    animation: slide 12s infinite;
-}
-
-.slides img {
-    width: 100%;
+    color: black;
+    margin: 10px auto;
+    padding: 12px;
+    width: 85%;
     border-radius: 10px;
 }
 
-@keyframes slide {
-    0% {transform: translateX(0);}
-    33% {transform: translateX(-100%);}
-    66% {transform: translateX(-200%);}
-}
-
-.btn {
+.whatsapp {
     display: block;
     width: fit-content;
-    margin: 20px auto;
+    margin: 15px auto;
     padding: 12px 20px;
     background: green;
     color: white;
     text-decoration: none;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: darkgreen;
-    box-shadow: 0 0 15px green;
+    border-radius: 8px;
 }
 
 .footer {
     text-align: center;
-    padding: 15px;
-    background: black;
-    color: white;
+    padding: 20px;
+    color: #ccc;
 }
 </style>
 
@@ -91,34 +72,50 @@ body {
 
 <body>
 
+<!-- Welcome -->
 <div class="header">
-🧵 VT Saree Services 👗
+    <h1>Welcome to VT Styles 😎</h1>
+    <p>Fabric • Fashion • Vibes 🔥</p>
+    <a href="#contact" class="btn">Contact Us</a>
 </div>
 
-<!-- Image Slider -->
-<div class="slider">
-    <div class="slides">
-        <img src="https://i.imgur.com/8Km9tLL.jpg">
-        <img src="https://i.imgur.com/5tj6S7Ol.jpg">
-        <img src="https://i.imgur.com/9Jg6K7Ol.jpg">
-    </div>
+<!-- About -->
+<div class="section">
+    <h2>About Us</h2>
+    <p>
+        We provide stylish fashion and quality fabric, sewing with cultural,
+        creative and modern vibes.
+    </p>
 </div>
 
 <!-- Services -->
-<div class="card">✨ Saree Pre-Pleating</div>
-<div class="card">💫 Fluffy Pleating</div>
-<div class="card">👗 Bridal Saree Setting</div>
+<div class="section">
+    <h2>Our Services</h2>
+
+    <div class="card">🧵 Saree & Pre-Pleating</div>
+    <div class="card">✨ Fluffy Pleating</div>
+    <div class="card">👗 Bridal Saree Setting</div>
+
+</div>
 
 <!-- Contact -->
-<div class="card">📞 +91 7406890302</div>
+<div class="section" id="contact">
+    <h2>Contact Us</h2>
 
-<!-- WhatsApp Button -->
-<a class="btn" href="https://wa.me/917406890302?text=Hi%20I%20need%20saree%20service" target="_blank">
-Message on WhatsApp 💬
-</a>
+    <a href="tel:+917406890302" style="text-decoration:none;">
+        <div class="card">📞 Contact</div>
+    </a>
+
+    <a class="whatsapp" href="https://wa.me/917406890302?text=Hi%20I%20need%20details" target="_blank">
+        Message on WhatsApp 💬
+    </a>
+
+    <div class="card">📍 Bangalore</div>
+
+</div>
 
 <div class="footer">
-For more enquiries, please contact us
+VT Styles © 2026
 </div>
 
 </body>
