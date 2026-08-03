@@ -48,8 +48,14 @@ body {
     padding: 12px;
     width: 85%;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* WhatsApp button */
 .whatsapp {
     display: block;
     width: fit-content;
@@ -61,6 +67,20 @@ body {
     border-radius: 8px;
 }
 
+/* Floating WhatsApp */
+.float-wa {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Footer */
 .footer {
     text-align: center;
     padding: 20px;
@@ -117,6 +137,11 @@ body {
 <div class="footer">
 VT Styles © 2026
 </div>
+
+<!-- Floating WhatsApp -->
+<a class="float-wa" href="https://wa.me/917406890302?text=Hi" target="_blank">
+💬
+</a>
 
 </body>
 </html>
