@@ -1,148 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VT Styles</title>
 
 <style>
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585);
+  color: white;
 }
 
 /* HEADER */
 header {
-  background: black;
-  color: white;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  text-align: center;
+  padding: 60px 20px;
 }
-
-header img {
-  height: 50px;
+header h1 {
+  font-size: 40px;
 }
-
-/* NAV */
-nav {
-  background: #333;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  position: relative;
-}
-
-nav ul li a {
-  color: white;
-  padding: 15px;
-  display: block;
-  text-decoration: none;
-}
-
-nav ul li:hover {
-  background: #555;
-}
-
-/* SUBMENU */
-nav ul li ul {
-  display: none;
-  position: absolute;
-  background: #444;
-}
-
-nav ul li:hover ul {
-  display: block;
+header p {
+  opacity: 0.8;
 }
 
 /* SECTION */
-.section {
-  padding: 20px;
+section {
+  padding: 40px 20px;
   text-align: center;
+}
+
+/* SERVICES */
+.service {
+  background: rgba(255,255,255,0.1);
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 350px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.service:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.2);
+}
+
+/* SUB MENU */
+.submenu {
+  display: none;
+  margin-top: 10px;
+}
+.submenu div {
+  padding: 5px;
+  font-size: 14px;
 }
 
 /* CONTACT */
 .contact {
-  background: #f5f5f5;
-  padding: 20px;
-  text-align: center;
+  background: black;
+  padding: 30px;
 }
 
-/* WHATSAPP FLOAT BUTTON */
+/* WHATSAPP BUTTON */
 .whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: green;
+  background: #25D366;
   color: white;
   padding: 15px;
   border-radius: 50%;
-  text-decoration: none;
   font-size: 20px;
+  text-decoration: none;
+}
+
+/* ANIMATION */
+.fade {
+  animation: fadeIn 2s ease;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <img src="logo.png" alt="VT Styles Logo">
-  <h1>VT Styles</h1>
+<header class="fade">
+  <h1>VT Styles ✨</h1>
+  <p>Elegance in Every Stitch</p>
+  <p>"Beauty begins the moment you decide to be yourself."</p>
 </header>
 
-<nav>
-<ul>
-  <li><a href="#">Home</a></li>
+<section class="fade">
+  <h2>About Us</h2>
+  <p>We specialize in stylish blouse stitching and custom designs that enhance your beauty.</p>
+</section>
 
-  <li>
-    <a href="#">Blouse</a>
-    <ul>
-      <li><a href="#">Bridal</a></li>
-      <li><a href="#">Casual</a></li>
-      <li><a href="#">Fancy</a></li>
-      <li><a href="#">Regular</a></li>
-    </ul>
-  </li>
-
-  <li><a href="#">Saree Pre Pleats</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-
-<div class="section">
+<section class="fade">
   <h2>Our Services</h2>
-  <p>Bridal Blouse Stitching</p>
-  <p>Designer Blouse</p>
-  <p>Saree Pre Pleats</p>
-</div>
 
-<div class="section">
-  <h3>Available in</h3>
-  <p>Bangalore</p>
-  <p>Bangarpet</p>
-</div>
+  <!-- BLOUSE -->
+  <div class="service" onclick="toggleMenu()">
+    <h3>Blouse Stitching 👗</h3>
+    <p>Click to view types</p>
 
-<!-- CONTACT SECTION -->
-<div id="contact" class="contact">
+    <div class="submenu" id="submenu">
+      <div>✨ Bridal Blouse</div>
+      <div>✨ Casual Blouse</div>
+      <div>✨ Fancy Blouse</div>
+      <div>✨ Regular Blouse</div>
+    </div>
+  </div>
+
+  <div class="service">
+    <h3>Saree Pre-Pleat</h3>
+    <p>Fluffy and neat saree styling</p>
+  </div>
+
+  <div class="service">
+    <h3>Gown Stitching</h3>
+    <p>Elegant designs for special occasions</p>
+  </div>
+
+  <div class="service">
+    <h3>Kurtha Stitching</h3>
+    <p>Comfortable daily wear</p>
+  </div>
+
+  <div class="service">
+    <h3>Kuchu Design</h3>
+    <p>Beautiful saree finishing touch</p>
+  </div>
+
+</section>
+
+<section class="fade">
+  <h2>Our Promise</h2>
+  <p>"We don’t just stitch clothes, we create confidence and style."</p>
+</section>
+
+<section class="contact">
   <h2>Contact Us</h2>
-  <p>📞 Phone: 917406890302</p>
-  <p>📍 Location: Bangalore / Bangarpet</p>
+  <p>📞 7406890302</p>
+  <p>📍 Bangalore</p>
+  <p>📍 Bangarpet</p>
+</section>
 
-  <!-- WhatsApp link -->
-  <a href="https://wa.me/917406890302" target="_blank">
-    Chat on WhatsApp
-  </a>
-</div>
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/917406890302" target="_blank">
+  💬
+</a>
 
-<!-- FLOATING WHATSAPP BUTTON -->
-<a class="whatsapp" href="https://wa.me/917406890302" target="_blank">💬</a>
+<script>
+function toggleMenu() {
+  let menu = document.getElementById("submenu");
+  if(menu.style.display === "block"){
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+</script>
 
 </body>
 </html>
