@@ -1,122 +1,169 @@
-   <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE" />
-  <title>VT Styles</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VT Styles</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: linear-gradient(to right, black, purple);
-      color: white;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585);
+  color: white;
+}
 
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-    }
+/* HEADER */
+header {
+  text-align: center;
+  padding: 60px 20px;
+}
+header h1 {
+  font-size: 40px;
+}
+header p {
+  opacity: 0.8;
+}
 
-    .hero h1 {
-      font-size: 50px;
-    }
+/* SECTION */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
 
-    .hero p {
-      font-size: 20px;
-      margin-top: 10px;
-      color: #ddd;
-    }
+/* SERVICES */
+.service {
+  background: rgba(255,255,255,0.1);
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 350px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.service:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.2);
+}
 
-    .section {
-      padding: 50px 20px;
-      text-align: center;
-    }
+/* SUB MENU */
+.submenu {
+  display: none;
+  margin-top: 10px;
+}
+.submenu div {
+  padding: 5px;
+  font-size: 14px;
+}
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
+/* CONTACT */
+.contact {
+  background: black;
+  padding: 30px;
+}
 
-    .card {
-      background: rgba(255,255,255,0.1);
-      padding: 20px;
-      border-radius: 10px;
-    }
+/* WHATSAPP BUTTON */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+}
 
-    .card h3 {
-      color: gold;
-    }
-
-    .contact {
-      background: black;
-      padding: 40px;
-    }
-  </style>
+/* ANIMATION */
+.fade {
+  animation: fadeIn 2s ease;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-  <h1>VT Styles</h1>
-  <p>Elegance in Every Stitch ✨</p>
+<header class="fade">
+  <h1>VT Styles ✨</h1>
+  <p>Elegance in Every Stitch</p>
   <p>"Beauty begins the moment you decide to be yourself."</p>
-</div>
+</header>
 
-<!-- ABOUT -->
-<div class="section">
+<section class="fade">
   <h2>About Us</h2>
-  <p>We specialize in stylish blouse stitching and custom designs that enhance your beauty and confidence.</p>
-</div>
+  <p>We specialize in stylish blouse stitching and custom designs that enhance your beauty.</p>
+</section>
 
-<!-- SERVICES -->
-<div class="section">
+<section class="fade">
   <h2>Our Services</h2>
 
-  <div class="services">
+  <!-- BLOUSE -->
+  <div class="service" onclick="toggleMenu()">
+    <h3>Blouse Stitching 👗</h3>
+    <p>Click to view types</p>
 
-    <div class="card">
-      <h3>Blouse Stitching</h3>
-      <p>Designer blouses with perfect fitting ethnic and modern style.</p>
+    <div class="submenu" id="submenu">
+      <div>✨ Bridal Blouse</div>
+      <div>✨ Casual Blouse</div>
+      <div>✨ Fancy Blouse</div>
+      <div>✨ Regular Blouse</div>
     </div>
-
-    <div class="card">
-      <h3>Saree Pre-Pleat</h3>
-      <p>Fluffy and neat pre-pleated saree styling.</p>
-    </div>
-
-    <div class="card">
-      <h3>Gown Stitching</h3>
-      <p>Elegant gowns for special occasions.</p>
-    </div>
-
-    <div class="card">
-      <h3>Kurtha Stitching</h3>
-      <p>Comfortable and stylish daily wear designs.</p>
-    </div>
-
-    <div class="card">
-      <h3>Kuchu Design</h3>
-      <p>Beautiful saree kuchu designs for a rich look.</p>
-    </div>
-
   </div>
-</div>
 
-<!-- QUOTE -->
-<div class="section">
+  <div class="service">
+    <h3>Saree Pre-Pleat</h3>
+    <p>Fluffy and neat saree styling</p>
+  </div>
+
+  <div class="service">
+    <h3>Gown Stitching</h3>
+    <p>Elegant designs for special occasions</p>
+  </div>
+
+  <div class="service">
+    <h3>Kurtha Stitching</h3>
+    <p>Comfortable daily wear</p>
+  </div>
+
+  <div class="service">
+    <h3>Kuchu Design</h3>
+    <p>Beautiful saree finishing touch</p>
+  </div>
+
+</section>
+
+<section class="fade">
   <h2>Our Promise</h2>
   <p>"We don’t just stitch clothes, we create confidence and style."</p>
-</div>
+</section>
 
-<!-- CONTACT -->
-<div class="contact">
+<section class="contact">
   <h2>Contact Us</h2>
-  <p>📞 Phone: 7406890302</p>
-  <p>📍 Location: Your City</p>
-</div>
+  <p>📞 7406890302</p>
+  <p>📍 Bangalore</p>
+  <p>📍 Bangarpet</p>
+</section>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/917406890302" target="_blank">
+  💬
+</a>
+
+<script>
+function toggleMenu() {
+  let menu = document.getElementById("submenu");
+  if(menu.style.display === "block"){
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+</script>
 
 </body>
 </html>
