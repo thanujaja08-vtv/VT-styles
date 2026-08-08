@@ -1,107 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>VT Styles | Blouse Stitching Experts</title>
+<title>VT Styles</title>
 
-  <!-- SEO -->
-  <meta name="description" content="VT Styles - Blouse stitching, Saree pre pleats, gown stitching, kurti stitching and more. Best tailoring service near you.">
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
 
-  <!-- Logo in tab -->
-  <link rel="icon" type="image/png" href="logo.png">
+/* HEADER */
+header {
+  background: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 
-  <style>
-    body {
-      background-color: #FFF5FA;
-      font-family: Arial;
-      margin: 0;
-      text-align: center;
-    }
+header img {
+  height: 50px;
+}
 
-    .header {
-      padding: 20px;
-      background: white;
-    }
+/* NAV */
+nav {
+  background: #333;
+}
 
-    h1 {
-      color: #6A0DAD;
-      margin: 5px;
-    }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
-    .tagline {
-      color: #FF4DA6;
-      font-size: 18px;
-    }
+nav ul li {
+  position: relative;
+}
 
-    .section {
-      padding: 20px;
-    }
+nav ul li a {
+  color: white;
+  padding: 15px;
+  display: block;
+  text-decoration: none;
+}
 
-    h2 {
-      color: #6A0DAD;
-    }
+nav ul li:hover {
+  background: #555;
+}
 
-    .service {
-      background: white;
-      margin: 10px;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px #eee;
-    }
+/* SUBMENU */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background: #444;
+}
 
-    .contact {
-      background: #6A0DAD;
-      color: white;
-      padding: 20px;
-    }
-  </style>
+nav ul li:hover ul {
+  display: block;
+}
+
+/* SECTION */
+.section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* CONTACT */
+.contact {
+  background: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+/* WHATSAPP FLOAT BUTTON */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: green;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+}
+</style>
 </head>
 
 <body>
 
-<!-- LOGO + TITLE -->
-<div class="header">
-  <img src="logo.png" width="120">
+<header>
+  <img src="logo.png" alt="VT Styles Logo">
   <h1>VT Styles</h1>
-  <p class="tagline">Stitching Your Style, Defining You</p>
-</div>
+</header>
 
-<!-- MAIN BUSINESS -->
+<nav>
+<ul>
+  <li><a href="#">Home</a></li>
+
+  <li>
+    <a href="#">Blouse</a>
+    <ul>
+      <li><a href="#">Bridal</a></li>
+      <li><a href="#">Casual</a></li>
+      <li><a href="#">Fancy</a></li>
+      <li><a href="#">Regular</a></li>
+    </ul>
+  </li>
+
+  <li><a href="#">Saree Pre Pleats</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
 <div class="section">
-  <h2>Our Speciality</h2>
-
-  <div class="service">
-    <h3>👗 Blouse Stitching</h3>
-    <p>Perfect fitting with elegant designs</p>
-  </div>
-
-  <div class="service">
-    <h3>🧵 Saree Pre Pleats (Fluffy)</h3>
-    <p>Neat and ready-to-wear pleats</p>
-  </div>
-
-  <div class="service">
-    <h3>✨ Designer Blouse Models</h3>
-    <p>Custom styles with modern touch</p>
-  </div>
-
-  <div class="service">
-    <h3>👗 Gown & Kurti Stitching</h3>
-    <p>Trendy and comfortable designs</p>
-  </div>
-
-  <div class="service">
-    <h3>🎀 Kuchu Design for Sarees</h3>
-    <p>Beautiful finishing for your saree</p>
-  </div>
-
+  <h2>Our Services</h2>
+  <p>Bridal Blouse Stitching</p>
+  <p>Designer Blouse</p>
+  <p>Saree Pre Pleats</p>
 </div>
 
-<!-- CONTACT -->
-<div class="contact">
+<div class="section">
+  <h3>Available in</h3>
+  <p>Bangalore</p>
+  <p>Bangarpet</p>
+</div>
+
+<!-- CONTACT SECTION -->
+<div id="contact" class="contact">
   <h2>Contact Us</h2>
-  <p>📱 Phone: 9876543210</p>
-  <p>📍 Location: Your Area</p>
+  <p>📞 Phone: 917406890302</p>
+  <p>📍 Location: Bangalore / Bangarpet</p>
+
+  <!-- WhatsApp link -->
+  <a href="https://wa.me/917406890302" target="_blank">
+    Chat on WhatsApp
+  </a>
 </div>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/917406890302" target="_blank">💬</a>
 
 </body>
 </html>
