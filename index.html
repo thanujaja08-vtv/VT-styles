@@ -1,177 +1,122 @@
-
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html>
 <head>
-    <meta name="google-site-verification"
-        content="kEbwBl_GbSibsI0YXHgI57Uo3WwLp
-        dTYCYcHhtudTe0" />
-<title>VT Styles</title>
-    
-</head>
-<body>
-<style>
-body {
-    margin: 0;
-    font-family: Arial;
-    background: linear-gradient(to right, black, purple);
-    color: white;
-}
+  <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE" />
+  <title>VT Styles</title>
 
-.header {
-    text-align: center;
-    padding: 30px 20px;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 28px;
-}
-
-.header p {
-    margin-top: 8px;
-    color: #ddd;
-}
-
-.section {
-    text-align: center;
-    padding: 20px;
-}
-
-/* Card */
-.card {
-    background: white;
-    color: black;
-    margin: 10px auto;
-    padding: 12px;
-    width: 85%;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-/* Hidden submenu */
-.submenu {
-    display: none;
-}
-
-.sub {
-    background: #f5f5f5;
-    color: black;
-    margin: 5px auto;
-    padding: 8px;
-    width: 75%;
-    border-radius: 8px;
-    font-size: 14px;
-}
-
-/* WhatsApp */
-.whatsapp {
-    display: block;
-    width: fit-content;
-    margin: 15px auto;
-    padding: 12px 20px;
-    background: green;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-/* Floating WhatsApp */
-.float-wa {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: green;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    color: #ccc;
-}
-</style>
-
-<script>
-function toggleMenu() {
-    var menu = document.getElementById("blouseMenu");
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "block";
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: linear-gradient(to right, black, purple);
+      color: white;
     }
-}
-</script>
 
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      color: gold;
+    }
+
+    .contact {
+      background: black;
+      padding: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- Welcome -->
-<div class="header">
-    <h1>Welcome to VT Styles 😎</h1>
-    <p>Fabric • Fashion • Vibes 🔥</p>
+<!-- HERO -->
+<div class="hero">
+  <h1>VT Styles</h1>
+  <p>Elegance in Every Stitch ✨</p>
+  <p>"Beauty begins the moment you decide to be yourself."</p>
 </div>
 
-<!-- About -->
+<!-- ABOUT -->
 <div class="section">
-    <h2>About Us</h2>
-    <p>
-        We provide stylish fashion and quality fabric, sewing with cultural,
-        creative and modern vibes.
-    </p>
+  <h2>About Us</h2>
+  <p>We specialize in stylish blouse stitching and custom designs that enhance your beauty and confidence.</p>
 </div>
 
-<!-- Services -->
+<!-- SERVICES -->
 <div class="section">
-    <h2>Our Services</h2>
+  <h2>Our Services</h2>
 
-    <div class="card">🧵 Saree & Pre-Pleating</div>
-    <div class="card">✨ Fluffy Pleating</div>
-    <div class="card">👗 Bridal Saree Setting</div>
+  <div class="services">
 
-    <!-- Clickable blouse -->
-    <div class="card" onclick="toggleMenu()">👚 Blouse Stitching ⬇</div>
-
-    <!-- Hidden submenu -->
-    <div id="blouseMenu" class="submenu">
-        <div class="sub">• Bridal Design Blouse</div>
-        <div class="sub">• Casual Blouse</div>
-        <div class="sub">• Fancy Blouse</div>
+    <div class="card">
+      <h3>Blouse Stitching</h3>
+      <p>Designer blouses with perfect fitting ethnic and modern style.</p>
     </div>
 
-    <div class="card">👗 Kurti Stitching</div>
-    <div class="card">👗 Gown Stitching</div>
+    <div class="card">
+      <h3>Saree Pre-Pleat</h3>
+      <p>Fluffy and neat pre-pleated saree styling.</p>
+    </div>
 
+    <div class="card">
+      <h3>Gown Stitching</h3>
+      <p>Elegant gowns for special occasions.</p>
+    </div>
+
+    <div class="card">
+      <h3>Kurtha Stitching</h3>
+      <p>Comfortable and stylish daily wear designs.</p>
+    </div>
+
+    <div class="card">
+      <h3>Kuchu Design</h3>
+      <p>Beautiful saree kuchu designs for a rich look.</p>
+    </div>
+
+  </div>
 </div>
 
-<!-- Contact -->
+<!-- QUOTE -->
 <div class="section">
-    <h2>Contact Us</h2>
-
-    <a href="tel:+917406890302" style="text-decoration:none;">
-        <div class="card">📞 +91 7406890302</div>
-    </a>
-
-    <a class="whatsapp" href="https://wa.me/917406890302?text=Hi%20I%20need%20details" target="_blank">
-        Message on WhatsApp 💬
-    </a>
-
-    <div class="card">📍 Bangalore</div>
-
+  <h2>Our Promise</h2>
+  <p>"We don’t just stitch clothes, we create confidence and style."</p>
 </div>
 
-<div class="footer">
-VT Styles © 2026
+<!-- CONTACT -->
+<div class="contact">
+  <h2>Contact Us</h2>
+  <p>📞 Phone: 7406890302</p>
+  <p>📍 Location: Your City</p>
 </div>
-
-<!-- Floating WhatsApp -->
-<a class="float-wa" href="https://wa.me/917406890302?text=Hi" target="_blank">
-💬
-</a>
 
 </body>
 </html>
