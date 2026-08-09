@@ -52,7 +52,7 @@ section {
   margin-top: 10px;
 }
 .submenu div {
-  padding: 5px;
+  padding: 6px;
   font-size: 14px;
 }
 
@@ -96,7 +96,7 @@ section {
 
 <section class="fade">
   <h2>About Us</h2>
-  <p>We specialize in ethnic,stylish blouse stitching and custom designs that enhance your beauty.</p>
+  <p>We specialize in stylish blouse stitching and custom designs that enhance your beauty.</p>
 </section>
 
 <section class="fade">
@@ -108,31 +108,42 @@ section {
     <p>Click to view types</p>
 
     <div class="submenu" id="submenu">
-      <div>✨ Bridal </div>
-      <div>✨ Casual </div>
-      <div>✨ Fancy   </div>
-      <div>✨ Regular </div>
+      <div>✨ Bridal Blouse</div>
+      <div>✨ Casual Blouse</div>
+      <div>✨ Fancy Blouse</div>
+      <div>✨ Regular Blouse</div>
     </div>
   </div>
 
+  <!-- SAREE -->
   <div class="service">
     <h3>Saree Pre-Pleat</h3>
     <p>Fluffy and neat saree styling</p>
   </div>
 
+  <!-- GOWN -->
   <div class="service">
     <h3>Gown Stitching</h3>
     <p>Elegant designs for special occasions</p>
   </div>
 
+  <!-- KURTHA -->
   <div class="service">
     <h3>Kurtha Stitching</h3>
     <p>Comfortable daily wear</p>
   </div>
 
-  <div class="service">
-    <h3>Kuchu Design</h3>
-    <p>Beautiful saree finishing touch</p>
+  <!-- KUCHU DESIGN (UPDATED WITH SUBMENU) -->
+  <div class="service" onclick="toggleKuchu()">
+    <h3>Kuchu Design ✨</h3>
+    <p>Click to view types</p>
+
+    <div class="submenu" id="kuchuMenu">
+      <div>✨ Simple Design</div>
+      <div>✨ Bridal Design</div>
+      <div>✨ Cradle Tassels</div>
+      <div>✨ Simple Tassels</div>
+    </div>
   </div>
 
 </section>
@@ -157,11 +168,12 @@ section {
 <script>
 function toggleMenu() {
   let menu = document.getElementById("submenu");
-  if(menu.style.display === "block"){
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
+  menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+
+function toggleKuchu() {
+  let menu = document.getElementById("kuchuMenu");
+  menu.style.display = (menu.style.display === "block") ? "none" : "block";
 }
 </script>
 
