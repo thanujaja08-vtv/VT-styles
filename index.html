@@ -16,26 +16,32 @@ body {
 /* HEADER */
 header {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 header h1 {
   font-size: 40px;
+  margin-bottom: 5px;
 }
 header p {
   opacity: 0.8;
+  margin: 5px 0;
 }
 
-/* SECTION */
+/* SECTION (🔥 GAP FIXED HERE) */
 section {
-  padding: 40px 20px;
+  padding: 20px 15px;
+  margin: 8px 0;
   text-align: center;
+}
+section h2 {
+  margin-bottom: 10px;
 }
 
 /* SERVICES */
 .service {
   background: rgba(255,255,255,0.1);
-  margin: 15px auto;
-  padding: 20px;
+  margin: 10px auto;
+  padding: 18px;
   border-radius: 12px;
   max-width: 350px;
   cursor: pointer;
@@ -49,17 +55,17 @@ section {
 /* SUB MENU */
 .submenu {
   display: none;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .submenu div {
-  padding: 6px;
+  padding: 5px;
   font-size: 14px;
 }
 
 /* CONTACT */
 .contact {
   background: black;
-  padding: 30px;
+  padding: 20px;
 }
 
 /* WHATSAPP BUTTON */
@@ -83,28 +89,16 @@ section {
   from {opacity: 0;}
   to {opacity: 1;}
 }
-  logo {
-  display: block;
-  margin: 0 auto 15px;
-}
-
-h1 {
-  margin-top: 10px;
-}
 </style>
 </head>
 
 <body>
 
 <header class="fade">
-    <img 
-      src="InShot_20260809_191931988.jpg"
-      alt="VT Styles Logo" width="120">
-     
+    <img src="InShot_20260809_191931988.jpg" alt="VT Styles Logo" width="120">
     <h1>VT Styles ✨</h1>
-
-  <p>Elegance in Every Stitch</p>
-  <p>"Beauty begins the moment you decide to be yourself."</p>
+    <p>Elegance in Every Stitch</p>
+    <p>"Beauty begins the moment you decide to be yourself."</p>
 </header>
 
 <section class="fade">
@@ -119,9 +113,8 @@ h1 {
   <div class="service" onclick="toggleMenu()">
     <h3>Blouse Stitching ✂️🧵</h3>
     <p style="font-size:14px; opacity:0.9;">
-Design blouse with perfect fitting,
-      ethnic & modern style ✨
-</p>
+      Design blouse with perfect fitting, ethnic & modern style ✨
+    </p>
     <p>Click to view types</p>
 
     <div class="submenu" id="submenu">
@@ -134,28 +127,28 @@ Design blouse with perfect fitting,
 
   <!-- SAREE -->
   <div class="service">
-    <h3>Saree Pre-Pleat</h3>
+    <h3>Saree Pre-Pleat 👗</h3>
     <p>Fluffy and neat saree styling</p>
   </div>
 
   <!-- GOWN -->
   <div class="service">
-    <h3>Gown Stitching</h3>
+    <h3>Gown Stitching 👗✨</h3>
     <p>Elegant designs for special occasions</p>
   </div>
 
   <!-- KURTHA -->
   <div class="service">
-    <h3>Kurtha Stitching</h3>
+    <h3>Kurtha Stitching 🧵</h3>
     <p>Comfortable daily wear</p>
   </div>
 
-  <!-- KUCHU DESIGN (UPDATED WITH SUBMENU) -->
+  <!-- KUCHU DESIGN -->
   <div class="service" onclick="toggleKuchu()">
     <h3>Kuchu Design ✨</h3>
     <p style="font-size:14px; opacity:0.9;">
-  Beautiful saree kuchu design for a rich look ✨
-</p>
+      Beautiful saree kuchu design for a rich look ✨
+    </p>
     <p>Click to view types</p>
 
     <div class="submenu" id="kuchuMenu">
